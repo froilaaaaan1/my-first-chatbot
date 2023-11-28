@@ -12,14 +12,32 @@ const LoginForm: FC<state> = ({hidden}) => {
 				flex-col
 				justify-around
 				items-center
+				gap-4
 				max-w-5xl`}>
+				<div className="
+					flex
+					flex-col
+					justify-center
+					items-center
+					w-full">
+					<h1 className="
+						font-bold
+						text-2xl">Log In</h1>
+					<p className="
+						font-medium">Log In to Continue</p>
+				</div>
 				<form className="
 					flex
 					flex-col
 					gap-5
 					items-center
 					justify-center">
-					<div>
+					<div className="
+					flex
+					flex-col
+					gap-5
+					items-center
+					justify-center">
 						<input type="text" required placeholder="E-Mail" className="
 						border-2
 						border-black
@@ -39,13 +57,7 @@ const LoginForm: FC<state> = ({hidden}) => {
 						border-2
 						font-bold">Log In</button>
 				</form>
-				<button className="
-						rounded-md
-						px-8
-						py-2
-						border-black
-						border-2
-						font-bold">I don&apos;t have an account.</button>
+				<button className="font-bold">I don&apos;t have an account.</button>
 			</div>
 		</>
 	)
